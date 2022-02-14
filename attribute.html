@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- 
+    có 3 cách sử dụng html trong css đó là
+    internal : sử dụng cặp thẻ style đặt trong html
+    external : tao file bên ngoài project hoặc trên internet và 
+    sử dụng thẻ link dẫn css tới đó
+    inline: sử dụng attribute style trong h1 html để viết 
+ -->
+ <!-- 
+     độ ưu tiên:
+     internal và external là như nhau
+     inline -1000
+     id -100
+     class 10
+     tag -1 vd: h1, h2
+     equal specificity?
+     universal selector and inherited -0
+  -->
+<html>
+    <head>
+        <title>Trang bán hàng thức ăn</title>
+        <!-- <link rel="stylesheet" href="main.css"> -->
+        <!-- internal 
+        <style>
+            h1 {
+                color:red;
+                font-size: 30px;
+            }
+        </style>-->
+    </head>
+    <body>
+       <div>
+        <h1 style="color:red;font-size: 20px;">CSS in HTML</h1>
+            <ol>
+                <li>Internal</li>
+                <li>External</li>
+                <li>Inline</li>
+            </ol> 
+       </div>
+    </body>
+
+</html>

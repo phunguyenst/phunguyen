@@ -1,0 +1,17 @@
+:root{
+    --text-color:red;
+}
+
+h1 {
+    color: blue;
+    font-size: 35px;
+}
+h1{
+    color: var(--text-color);
+}
+.first{
+    color : pink;
+}
+#second{
+    color :green;
+}

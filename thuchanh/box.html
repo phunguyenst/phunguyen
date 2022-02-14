@@ -1,0 +1,90 @@
+<html>
+    <head>
+        
+        <title>F8-Shop</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css">
+
+        <style>
+            .box {
+                height: 100px;
+                width: 100px;
+                color: purple;
+                background-color:greenyellow;
+                padding: 16px;
+                box-sizing: border-box;
+            }
+            .bug{
+                height: 50px;
+                width: 100%;
+                color: purple;
+                background-color:greenyellow;
+                
+            }
+            h1{
+                color:rgb(190, 50, 50);
+            }
+            /* .header{
+                width: 100%;
+                height: 100px;
+                background-color:blue;
+                padding: 20px;
+                box-sizing: border-box;
+                border: 10px dashed white;
+                background-clip: border-box;
+            } */
+            html, body {
+                margin:0;
+            }
+            .gaixinh{
+                width: 100%;
+                height: 100vh;
+                /* cach 1
+                 background-image:linear-gradient(0,rgba(255, 255, 0, 0.5), rgba(255, 255, 255, 0)),url(https://1.bp.blogspot.com/-YXUzAk-klDY/Xtb3T7QeYWI/AAAAAAAAnng/WKaMiZsfzDkMrN0KncLfM4paArjoJkdJACLcBGAsYHQ/s1600/Gai-xinh-2k6%2B%252817%2529.jpg)
+                ;
+                background-size: 30% ;
+                background-repeat: no-repeat;
+                background-position:  center; */
+                /* cach 2 */
+                background: url(https://anhdephd.com/wp-content/uploads/2019/03/girl-xinh-trung-quoc-416x580.jpg)no-repeat center /contain;
+                /* background: rgb(128, 87, 152) */
+            }
+            
+            a::after{
+                content: "(" attr(href)")";
+            }
+            .bug::after{
+                content: attr(data-title);
+            }
+            /* pseudo elements: phần tử giả */
+            .bug::before{
+                content: "nhìn cái giề";
+                /* thêm khối */
+                display: block;
+                width:50px;
+                height:50px;
+                background-color: aquamarine;
+
+            }
+            h1::first-letter{
+                font-size:50px;
+            }
+            /*  pseudo classes: lớp giả*/
+            .bug:hover{
+                color:aqua;
+            }
+            a:hover{
+                color:aqua;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Ảnh gái xinh <br />Gái Trung Quốc </h1>
+        <a href="https://sv.iuh.edu.vn/dashboard.html">Mở profile</a>
+        <div class="bug" data-title="xin chao cac ban"></div>
+        <div class= "header"></div>
+        <div class ="gaixinh"></div>
+        
+    </body>
+</html>
