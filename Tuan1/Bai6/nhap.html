@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first{
+            background-color: orangered;
+        }
+        .second{
+            background-color: orangered;
+        }
+        #one{
+            background-color: yellow;
+        }
+        #two{
+            background-color: yellow;}
+        #three{background-color: yellow;}
+    </style>
+</head>
+<body>
+    <table border="1"  width = 50% cellpadding="10" cellspacing="0">
+        <tr>
+            <td>1</td>
+            <td colspan = "3">2</td>
+           
+        </tr>
+        <tr>
+            <td rowspan = "3">3</td>
+            <td class = "first">4</td>
+            <td class = "first">5</td>
+            <td rowspan = "2" id="one">6</td>
+        </tr>
+        <tr>
+            
+            <td class = "second">7</td>
+            <td class = "second">8</td>
+            
+        </tr>
+        <tr>
+            
+            <td colspan = "2" id="two">9</td>
+            
+            <td id = "three">10</td>
+        </tr>
+    </table>
+</body>
+</html>
