@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: auto;
+            padding:0;
+        }
+        .wrapper{
+            height:700px;
+            width:1089px;
+            background-color:aqua;
+        }
+        header{
+            height: 150px;
+            width:1089px;
+            background-color:aquamarine;
+        }
+        nav{
+            height: 50px;
+            width: 1089px;
+            background-color:blanchedalmond;
+        }
+        .content{
+            height:400px;
+            width:1089px;
+            background-color:cadetblue;
+        }
+        aside{
+            height:100%;
+            width:40%;
+            background-color:chartreuse;
+            float: left;
+
+        }
+        section{
+            height:100%;
+            width:60%;
+            background-color:coral;
+            float: left;
+        }
+
+        footer{
+            height: 100px;
+            width: 1089px;
+            background-color:blueviolet;
+        }
+        .menu li{
+            width:250px; height:50px; float: left; line-height: 50px; list-style:none; text-indent: 15px;
+            justify-content: center;
+            text-align: center;
+        }
+        .menu li:hover{
+            background-color:black;
+        }
+        li:hover{font-family: 'Courier New', Courier, monospace; font-style: italic; font-weight: bold; opacity: 0.5;}
+        .menu li .submenu li a{
+            text-align: center;
+           
+            color: yellow;
+            font-size:14px;
+            display:block;
+            white-space: nowrap;
+        }
+
+        .menu li .submenu li a:hover{
+            
+            color:yellow;
+        }
+        .menu li:hover>.submenu{
+            display:block;
+        }
+        .menu li:hover>a{
+            background-color:black;
+            color:yellow;
+        }
+        .menu li .submenu{
+            position: absolute;
+            list-style: none;
+            display:none;background-color:black;
+           
+            padding: 0;
+            margin:0;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header></header>
+        <nav>
+            <ul class="menu">
+                <li><a href="">Trang Chủ</a></li>
+                <li><a href="">Lịch học</a>
+                    <ul class="submenu">
+                        <li><a href="">Ngày học</a></li>
+                        <li><a href="">Bảng lịch</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="">Thông báo</a></li>
+                <li><a href="">Liên hệ</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <aside></aside>
+            <section></section>
+           
+           
+        </div>
+        <footer></footer>
+    </div>
+</body>
+</html>
