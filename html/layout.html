@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(../img/background.png);
+        }
+        *{
+            margin:auto;
+            padding:0;
+        }
+        .wrapper{
+            height:auto;
+            width:1089px;
+            background-color:antiquewhite;
+
+        }
+        menu{
+            height:50px;
+            width:1089px;
+            background-color:aqua;
+        }
+
+        header{
+            height:150px;
+            width:1089px;
+            background-color:blue;
+            background-image: url(../img/Header.jfif);
+        }
+        .content{
+            height:400px;
+            width:1089px;
+            background-color: blueviolet;
+
+        }
+        aside{
+            height: 100%;
+            width:30%;
+            background-color:chartreuse;
+            float:left;
+        }
+        section{
+            height:100%;
+            width:70%;
+            background-color:violet;
+            float:left;
+        }
+        footer{
+            height:130px;
+            width:1089px;
+            background-color:sienna;
+        }
+        .menu-item li{
+            height:50px;
+            width:200px;
+            float:left;
+            list-style: none;
+            text-indent: 15px;
+            line-height: 50px;
+            text-align: center;
+            position: relative;
+        }
+        .menu-item li>.submenu{
+            display:none;
+        }
+         .menu-item li .submenu {
+            position:absolute;
+            background-color:aquamarine;
+
+        } 
+        .menu-item li:hover> .submenu{
+            display: block;
+        }
+        menu span input{
+            padding:2px;
+        }
+        menu span label{
+            padding:2px;
+           
+        }
+       img{
+           width:300px;
+           height:100px;
+       }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <menu>
+            <ul class ="menu-item">
+                <li>Item1</li>
+                <li>Item2
+                    <ul class ="submenu">
+                        <li>vật phẩm</li>
+                        <li>thông tin</li>
+                    </ul>
+                </li>
+                <li>Item3</li>
+                <li>Item4</li>
+                <label for="email">Email:</label>
+                <input type="email" name="" id="">
+            </ul>
+        </menu>
+        <header></header>
+        <div class="content">
+            <aside>
+                
+                   
+                </article >
+                <h1>HOẠT ĐỘNG 1</h1>
+                <img src="../img/download (2).jpg" alt="">
+                <article>
+                    <h1>HOẠT ĐỘNG 2</h1>
+                    <img src="../img/download.jpg" alt="">
+                </article>
+                <article >
+                    <h1>HOẠT ĐỘNG 3</h1>
+                    <img src="../img/download (1).jpg" alt="">
+                </article>
+            </aside>
+            <section> 
+                <article>
+                    <form action="" method="post"></form>
+                    <caption>
+                        <h1>THÔNG TIN</h1>
+                    </caption>
+                    <fieldset>
+                        <legend>ĐĂNG KÍ MÙA HÈ XANH</legend><br>
+                        <div style="padding: 20px;">
+                            <label for="lblhoten">Nhập Họ Tên: </label>
+                            <input type="text" name="lblhoten" id="lblhoten" required placeholder="vd:Nguyen van a"><br><br>
+                            <label for="lblpass">Nhập Mật khẩu: </label>
+                            <input type="password" name="lblpass" id="lblpass" required placeholder="password"><br><br>
+                            <label for="lblemail">Nhập Email: </label>
+                            <input type="email" name="lblemail" id="lblemail" required placeholder="vd:teo123@gmail.com"><br><br>
+                            <label for="lblcmnd">Nhập CMND: </label>
+                            <input type="text" name="lblcmnd" id="lblcmnd" required placeholder="vd:203812032..."><br><br>
+                            <label for="lblNgaySinh">Ngày sinh</label>: </label>
+                            <input type="date" name="lblNgaySinh" id="lblNgaySinh" required placeholder="dd/MM/yyyy"><br><br>
+                            <label for="lbldiachi">Nhập địa chỉ: </label>
+                            <input type="text" name="lbldiachi" id="lbldiachi" required placeholder="vd:12/phuong4/govap"><br><br>
+                            <input type="submit" value="chấp nhận">
+                            <input type="reset" value="xoá">
+
+                        </div>
+                    </fieldset>
+                </article>
+            </section>
+        </div>
+        <footer></footer>
+    </div>
+</body>
+</html>
